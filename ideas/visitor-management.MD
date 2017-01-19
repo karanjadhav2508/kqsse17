@@ -1,6 +1,4 @@
 __E_BADGE__ : [e-badge patent](https://www.google.com/patents/US20120310852)
-
-_Steps_ :
 - receiving a pre-registration request to an organization
     - personal details of visitor
     - date, time, duration, host name and purpose for the visit
