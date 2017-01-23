@@ -1,8 +1,17 @@
+
+
+
+
 1.	http://ieeexplore.ieee.org.prox.lib.ncsu.edu/abstract/document/7789812/
+
 	a.	Attendance Management System Using a Mobile Device and a Web Application
+	
 	b.	Network-Based Information Systems (NBiS), 2016 19th International Conference on
+	
 	c.	7-9 Sept. 2016
+	
 	d.	Important Key points-
+	
 		•	For lectures with a large amount of students, there is a “compelling need for a well-designed attendance management system” for efficient tracking of participation.
 		•	A common case is the use of a student ID card. IC chips or a magnetic record in the card is used. 
 		•	There are several classifications: 
