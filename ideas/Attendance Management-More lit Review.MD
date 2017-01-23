@@ -15,7 +15,7 @@
 		•	For lectures with a large amount of students, there is a “compelling need for a well-designed attendance management system” for efficient tracking of participation.
 		•	A common case is the use of a student ID card. IC chips or a magnetic record in the card is used. 
 		•	There are several classifications: 
-			o	Student ID card and card reader (most common)
+				o	Student ID card and card reader (most common)
 			o	Near field communication based system (NFC)
 				o	Barcode and similar coding based
 			o	Biometrics 
@@ -41,13 +41,19 @@
 
 
 2.	http://dl.acm.org.prox.lib.ncsu.edu/citation.cfm?id=2527157
+
 	a.		Student attendance reporting prototype using SSQL
+	
 	b.	Journal of Computing Sciences in Colleges archive 
+	
 	c.	Volume 29 Issue 1, October 2013 
+	
 	d.	Pages 40-49
+	
 	e.	Important Key points-
+	
 		•	Proposed Bar code scanner system- for the University of Mississippi
-			•	Classroom scanners would need to be integrated with their current data management system. More servers would be needed to handle input data to send to the data management system.  (this is on large scale)
+		•	Classroom scanners would need to be integrated with their current data management system. More servers would be needed to handle input data to send to the data management system.  (this is on large scale)
 		•	Prototype- 4 scanners in 2 classrooms with quickly put together reporting system to see effectiveness before implementing school wide with the  costs of barcode scanners.
 		•	Simple Stream Query Language can be used to “rapidly develop this prototype system”
 		•	SSQL is made to run in standalone interpreter and its syntax is like SQL. But adds capabilities to handle data streams. 
@@ -56,17 +62,17 @@
 			o	Focus on Packet-bases stream definition- each piece of data is defined as a packet.
 			o	This allows multiple packets and packet types per stream, so no need to filter data. 
 			o	Features of SSQL-
-	Simple SQL-like Syntax
-	Packet Based Stream Definition
-	Window Based Queries- 
-	Trigger controlled queries 
-	File based Queries
-	Simple Stream In/Out/ Export Control
-	Stream merging
-	Traditional Query Operations
-	Interpreter based system
-	•	Attendance Reporting Prototype- Simulated experiment, with an app that used 30 lines of code to handle incoming data and export it to a simple easy to read file. 
-	•	MY ANALYSIS so far- This paper goes into depth about SSQL and not much into the implementation of their simulated prototype. However, based on this information and their simulation, we should consider taking advantage of the simplicity of SSQL in some of our own solutions. Their simulation was also to show that the barcode scanner would be a more effective way to take attendance in addition to the management and interpretation of the attendance data for participation grades, final attendance counts, as well as dropping students after a certain amount of missed classes.  This is especially when the class size is large.
+				`Simple SQL-like Syntax
+				Packet Based Stream Definition
+				Window Based Queries- 
+				Trigger controlled queries 
+				File based Queries
+				Simple Stream In/Out/ Export Control
+				Stream merging
+				Traditional Query Operations
+				Interpreter based system
+•	Attendance Reporting Prototype- Simulated experiment, with an app that used 30 lines of code to handle incoming data and export it to a simple easy to read file. 
+	f.	MY ANALYSIS so far- This paper goes into depth about SSQL and not much into the implementation of their simulated prototype. However, based on this information and their simulation, we should consider taking advantage of the simplicity of SSQL in some of our own solutions. Their simulation was also to show that the barcode scanner would be a more effective way to take attendance in addition to the management and interpretation of the attendance data for participation grades, final attendance counts, as well as dropping students after a certain amount of missed classes.  This is especially when the class size is large.
 
 
 
