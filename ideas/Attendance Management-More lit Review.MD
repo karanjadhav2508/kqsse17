@@ -68,10 +68,15 @@
 
 
 3.	http://search.proquest.com.prox.lib.ncsu.edu/docview/1524024677?pq-origsite=gscholar
+
 	a.	TouchIn: An NFC Supported Attendance System in a University Environment
+	
 	b.	International Journal of Information and Education Technology; 
+	
 	c.	 (Oct 2014): 448-453.
+	
 	d.	Key points
+	
 		•	Problems with traditional manual paper signing for attendance can include:
 			o	Time consuming
 			o	Prone to cheating (student signs for a friend)
@@ -81,30 +86,23 @@
 			o	Activates by touching 2 NFC devices together.
 			o	Max data transfer rate is 424kbits/s at a frequency of 13.56 MHz
 			o	Based on RFID, uses initiator and a target. Initiator is active with internal power for IC’s that generate outgoing signal. Target is passive with no power, so could be stickers or cards.
-			o	Three modes-
-	 Reader/writer mode, NFC device reads or writes to a tag
-	card emulation mode, NFC device acts like a card or tag, 
-	peer to peer mode. Exchange of info between two NFC devices
-	•	Related Work-
-		o	Desktop application which had teacher check boxes next to student names
-		o	Client server socket program where students registered individually from personal laptop.
-		o	Both still waste time but it is easier to generate reports and gather data.
-		o	.NET and Oracle based system that implements card readers
-		o	Finger print system with handheld device and host application for management of data
-		o	BIS has RFID based commercial system. Sends SMS and email to parents automatically. Data sent to BISAM server. Also includes time management part for keeping track of employee attendance.
-		o	Technical University of Cartagena developed NFC based system using NFC active and passive devices, NFC readers, where NFC server hosts linked to the university network. Students and teachers install mobile app on their devices, and will run upon touching the reader.
-		o	Budapest University of Technology and Economics also implemented NFC system. Biometric info is added to this to reduce impersonation. Student scans a card and their fingerprint. 
-		o	Combined NFC and Social Network Service based (mostly for Event management attendance) Goal was to bridge NFC and SNS. Participant provides SNS Id, downloads application upon attendance, The meeting name session name and sns ID is set by participant. Touching the tag in the session, sends info to server, and participant gets all sns IDs in attendance
-	•	Proposition of Paper- System that does not require RFID, Finger print, NFC specific readers.  Called TouchIn System. Only need Smart phone
-	•	TouchIn- Reader unit and web server unit. 
-	•	Software required in the reader unit- client application to be installed on the mobile phone.  For the web unit- web based attendance application.
-	•	Reader unit responsible for reading student info. From mobile device. Device Id is used for verifying the student. (assuming student has NFC enabled mobile device and internet connection)
-	•	In the case that student does not have nfc enabled device- NFC tag can be issued, like a card, or bracelet. 
-	•	Designed with PHP, Javascript, and MySQL. 
-		o	Database tables-
-	Users
-	Course
-	Schedule 
-	Attendance
+			o	Three modes-Reader/writer mode, NFC device reads or writes to a tag, card emulation mode, NFC device acts like a card or tag, peer to peer mode. Exchange of info between two NFC devices
+		•	Related Work-
+			o	Desktop application which had teacher check boxes next to student names
+			o	Client server socket program where students registered individually from personal laptop.
+			o	Both still waste time but it is easier to generate reports and gather data.
+			o	.NET and Oracle based system that implements card readers
+			o	Finger print system with handheld device and host application for management of data
+			o	BIS has RFID based commercial system. Sends SMS and email to parents automatically. Data sent to BISAM server. Also includes time management part for keeping track of employee attendance.
+			o	Technical University of Cartagena developed NFC based system using NFC active and passive devices, NFC readers, where NFC server hosts linked to the university network. Students and teachers install mobile app on their devices, and will run upon touching the reader.
+			o	Budapest University of Technology and Economics also implemented NFC system. Biometric info is added to this to reduce impersonation. Student scans a card and their fingerprint. 
+			o	Combined NFC and Social Network Service based (mostly for Event management attendance) Goal was to bridge NFC and SNS. Participant provides SNS Id, downloads application upon attendance, The meeting name session name and sns ID is set by participant. Touching the tag in the session, sends info to server, and participant gets all sns IDs in attendance
+		•	Proposition of Paper- System that does not require RFID, Finger print, NFC specific readers.  Called TouchIn System. Only need Smart phone
+		•	TouchIn- Reader unit and web server unit. 
+		•	Software required in the reader unit- client application to be installed on the mobile phone.  For the web unit- web based attendance application.
+		•	Reader unit responsible for reading student info. From mobile device. Device Id is used for verifying the student. (assuming student has NFC enabled mobile device and internet connection)
+		•	In the case that student does not have nfc enabled device- NFC tag can be issued, like a card, or bracelet. 
+		•	Designed with PHP, Javascript, and MySQL. 
+		o	Database tables-Users, Course, Schedule, Attendance
 		o	Users of app- administrator, lecturers, and students
 •	MY ANALYSIS so far- This is an interesting concept where no extra devices are needed. Only “Smart Posters” and the students phone. This paper points out other concepts used in the past.  TouchIn seems like a promising avenue to focus on when finding solutions to attendance management. The main drawback is that when Internet or Smart phones are not available, it may be more difficult to implement without having extra costs (issuing cards, tags..)
