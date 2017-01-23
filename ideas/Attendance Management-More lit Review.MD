@@ -61,17 +61,8 @@
 		•	SSQL-
 			o	Focus on Packet-bases stream definition- each piece of data is defined as a packet.
 			o	This allows multiple packets and packet types per stream, so no need to filter data. 
-			o	Features of SSQL-
-				`Simple SQL-like Syntax
-				Packet Based Stream Definition
-				Window Based Queries- 
-				Trigger controlled queries 
-				File based Queries
-				Simple Stream In/Out/ Export Control
-				Stream merging
-				Traditional Query Operations
-				Interpreter based system
-•	Attendance Reporting Prototype- Simulated experiment, with an app that used 30 lines of code to handle incoming data and export it to a simple easy to read file. 
+			o	Features of SSQL-Simple SQL-like Syntax, Packet Based Stream Definition, Window Based Queries, Trigger controlled queries, File based Queries, Simple Stream In/Out/ Export Control, Stream merging, Traditional Query Operations, Interpreter based system
+		•	Attendance Reporting Prototype- Simulated experiment, with an app that used 30 lines of code to handle incoming data and export it to a simple easy to read file. 
 	f.	MY ANALYSIS so far- This paper goes into depth about SSQL and not much into the implementation of their simulated prototype. However, based on this information and their simulation, we should consider taking advantage of the simplicity of SSQL in some of our own solutions. Their simulation was also to show that the barcode scanner would be a more effective way to take attendance in addition to the management and interpretation of the attendance data for participation grades, final attendance counts, as well as dropping students after a certain amount of missed classes.  This is especially when the class size is large.
 
 
