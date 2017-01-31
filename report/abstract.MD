@@ -1,2 +1,3 @@
 __ABSTRACT__
+
 Organizations are comprised of a number of people involved in different tasks and roles. Ensuring the participation and presence of these individuals is of utmost importance. For this, some sort of attendance checking and management system is employed by almost all of these organizations. In this project we explore the problems mentioned in different literature as well as the problems faced by the participants of our user survey in attendance management. We further explore the solutions proposed by these papers and compare the tradeoffs between each of them. Finally in terms of future work, we intend to implement three solutions from among these based on our user survey and implement a simpler, cheaper and more accessible version of it.
