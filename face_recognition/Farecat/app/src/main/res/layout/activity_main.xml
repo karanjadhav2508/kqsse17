@@ -12,31 +12,40 @@
     tools:context="com.farecat.farecat.MainActivity">
 
     <Button
+        android:text="Recognize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recognizeButton"
+        android:onClick="takePhoto"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/enrollButton"
+        android:layout_marginBottom="18dp" />
+
+    <Button
         android:text="Enroll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/enrollButton"
-        android:layout_alignBottom="@+id/verifyButton"
+        android:onClick="takePhoto"
+        android:layout_above="@+id/recognizeButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="63dp"
-        android:onClick="takePhoto" />
+        android:layout_marginBottom="19dp" />
 
-    <Button
-        android:text="Verify"
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/verifyButton"
-        android:layout_marginBottom="15dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/enrollButton"
-        android:onClick="takePhoto" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher"
-        android:id="@+id/photoView"
-        android:layout_marginTop="78dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/subjectText"
+        android:layout_marginTop="67dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statusTextView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
 </RelativeLayout>

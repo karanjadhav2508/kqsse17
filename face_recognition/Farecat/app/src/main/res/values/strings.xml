@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Farecat</string>
+    <string name="enter_student_name">Enter student name</string>
 </resources>
