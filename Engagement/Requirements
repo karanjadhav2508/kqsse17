@@ -1,1 +1,14 @@
+Requirements for Engagement Implementation (tenDance Engagement):
 
+Key Focus points:
+  -Track Student Attendance
+  -Track Engagement
+  
+Probable assumptions:
+  -All students have either mobile smart phone or access to laptop during class. Exceptions can be made if this is not the case, such as classroom provided devices.
+
+Ways engagement could be tracked:
+  -participation grade through attendance
+  -multiple choice quiz to show understanding of reading or class before that can track scores to be used for a grade(optional): created by professor
+  -open ended questions, used for discussion
+  -Default would be an "I'm here" button so minimum application would track attendance by students clicking a button. 
