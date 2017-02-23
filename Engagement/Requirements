@@ -12,3 +12,25 @@ Ways engagement could be tracked:
   -multiple choice quiz to show understanding of reading or class before that can track scores to be used for a grade(optional): created by professor
   -open ended questions, used for discussion
   -Default would be an "I'm here" button so minimum application would track attendance by students clicking a button. 
+  
+ Proffessor abilities:
+ =>Can Set
+  -quiz schedule (mw,tr,mwf,f...) for particular class
+  -quizes: date, duration, type, delete, questions, correct answers.
+    Time limit: 1st ten minutes vs. whole class (would vary with professor)
+  -number of quizes(days) one can miss before they should be droped, in which a message will pop up denoting all such students in said class that should be dropped from the course.
+ =>Can navigate between different classes quickly
+ =>Can place settings on individual classes (such as schedule, add/remove students [could have security concerns here however])
+ =>Can see
+  -all past quiz results by date
+  -all attendence scores by student
+  -scores will be primarily be determined by whether student took quiz (clicking the "I'm here" button), not by actual quiz grade
+  
+  Student abilities:
+  - login
+  - homepage will show "today's quiz" if applicable, and a button will open the quiz.
+  - default will be the "I'm here" button.
+  - once quiz is completed, student may log off.
+  - student should be able to see attendance score in relation to how many quizes he/she may have missed, and how many he/she can miss in the future without penalty.
+
+Further Requirements will follow (student abilities)
