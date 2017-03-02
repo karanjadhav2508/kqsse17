@@ -1,0 +1,40 @@
+//multiple tools testing for db
+public void actionPerformed(ActionEvent event) {
+        String command = event.getActionCommand();
+
+        if (command.equals("Record")) {
+            voiceReg.voiceRecord();
+        }
+
+        if (command.equals("Register")) {
+            //createUserRecord();
+            //clearUserRecord();
+//          customerPanel.setVisible(true);
+
+            try {
+                Class.forName("org.h2.Driver");
+                Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "pi", "wise2k");
+                String query = "insert into dataentry values(?,?,?,?,?,?)";
+                PreparedStatement statement = connection.prepareStatement(query);
+                statement.setString(1, name.getText());
+                statement.setString(2, age.getText());
+                statement.setString(3, couseApplied.getText());
+                statement.setString(4, semester.getText());
+                statement.setString(5, phone.getText());
+                statement.setString(6, email.getText());
+                statement.execute();
+
+                JOptionPane.showMessageDialog(null, "data is added");
+            }
+            catch (ClassNotFoundException e) {
+               e.printStackTrace();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+
+            if (command.equals("Clear")) {
+                clearUserRecord();
+            }
+        }
+    }
