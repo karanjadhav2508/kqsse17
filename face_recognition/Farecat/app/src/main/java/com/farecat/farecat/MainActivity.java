@@ -1,10 +1,14 @@
 package com.farecat.farecat;
 
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.provider.MediaStore;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Base64;
@@ -12,16 +16,18 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.ProgressBar;
 
-import com.google.gson.Gson;
+import com.farecat.farecat.helpers.AlertDialogHelper;
+import com.farecat.farecat.records.AttendanceRecord;
+import com.farecat.farecat.records.DBManager;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
@@ -37,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
     private static final String CONTENT_TYPE = "application/json";
 
     private final OkHttpClient client = new OkHttpClient();
-    private final Gson gson = new Gson();
 
     static final String KAIROS_DOMAIN = "https://api.kairos.com";
     private static final String ENROLL = "enroll";
@@ -53,34 +58,48 @@ public class MainActivity extends AppCompatActivity {
     private static final String STATUS = "status";
     private static final String ERRORS = "Errors";
     private static final String MESSAGE = "Message";
+    private static final String SUCCESS = "success";
+    private static final String MESSAGE_FAILURE = "message";
 
     private static final String APP_ID_VALUE = "76395980";
     private static final String APP_KEY_VALUE = "fe00f9411bbadb0269b4f0757050aaf2";
     private static final String GALLERY_VALUE = "students";
 
     private static final String EMPTY_USER = "User name cannot be blank";
-    private static final String NO_STATUS = "";
+    private static final String ALREADY_ENROLLED = " is already enrolled";
     private static final String COMM_PROBLEM = "Communication problem. Please try again.";
+
+    private DBManager dbManager;
     private EditText subjectText;
     private String subject_id;
     private String apiService;
-    private TextView status;
+    private ArrayList<Button> buttons;
 
-    static final String TAG = "logger";
+    static final String TAG = "MainActivity";
+    final Context context = this;
+
+    private AlertDialog alertDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        dbManager = new DBManager(this, null, null, 1);
         subjectText = (EditText) findViewById(R.id.subjectText);
-        status = (TextView) findViewById(R.id.statusTextView);
+        buttons = new ArrayList<Button>();
         Button enrollButton = (Button) findViewById(R.id.enrollButton);
         Button recognizeButton = (Button) findViewById(R.id.recognizeButton);
+        Button viewAttendancePageButton = (Button) findViewById(R.id.viewAttendancePageButton);
+        buttons.add(enrollButton);
+        buttons.add(recognizeButton);
+        buttons.add(viewAttendancePageButton);
+
         if(!hasCamera()) {
             enrollButton.setEnabled(false);
             recognizeButton.setEnabled(false);
         }
+        alertDialog = AlertDialogHelper.buildAlertDialog(MainActivity.this, "Alert", "OK");
     }
 
     private boolean hasCamera() {
@@ -88,17 +107,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void takePhoto(View v) {
-        status.setText(NO_STATUS);
         apiService = ((Button)v).getText().toString().toLowerCase();
         if(apiService.equals(ENROLL)) {
             subject_id = subjectText.getText().toString();
             if(subject_id.matches("")) {
-                status.setText(EMPTY_USER);
+                alertDialog.setMessage(EMPTY_USER);
+                alertDialog.show();
+                return;
+            }
+            if(dbManager.isEnrolled(subject_id)) {
+                alertDialog.setMessage(subject_id+ALREADY_ENROLLED);
+                alertDialog.show();
                 return;
             }
         }
         Intent photoIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(photoIntent, REQUEST_IMAGE_CAPTURE);
+    }
+
+    public void goToAttendance(View v) {
+        Intent viewAttIntent = new Intent(getApplicationContext(), ViewAttendanceActivity.class);
+        startActivity(viewAttIntent);
     }
 
     @Override
@@ -107,7 +136,19 @@ public class MainActivity extends AppCompatActivity {
             Bundle extras = data.getExtras();
             Bitmap photo = (Bitmap) extras.get("data");
             String base64Photo = bitmapToBase64(photo);
-            new KairosApiTask().execute(base64Photo);
+
+            try {
+                subjectText.setText("");
+                alertDialog.setMessage(apiService + " in progress..");
+                for(Button b : buttons) {
+                    b.setEnabled(false);
+                }
+                alertDialog.show();
+                new KairosApiTask().execute(base64Photo);
+            } catch(Exception e) {
+                Log.i(TAG, "KairosApiTask problem : "+e.getMessage());
+                e.printStackTrace();
+            }
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
@@ -120,6 +161,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private class KairosApiTask extends AsyncTask<String, String, String> {
+
         @Override
         protected String doInBackground(String... params) {
             String resultMessage = "";
@@ -164,9 +206,21 @@ public class MainActivity extends AppCompatActivity {
                             JSONObject transaction =((JSONObject)jo.getJSONArray(IMAGES).get(0))
                                     .getJSONObject(TRANSACTION);
                             String kairosStatus = transaction.getString(STATUS);
-                            String subject = transaction.getString(SUBJECT_ID);
                             Log.i(TAG, "Kairos Status : "+kairosStatus);
-                            resultMessage = apiService+" "+subject+" : "+kairosStatus;
+                            if(kairosStatus.equals(SUCCESS)) {
+                                String subject = transaction.getString(SUBJECT_ID);
+                                resultMessage = apiService+" "+subject+" : "+kairosStatus;
+                                if(apiService.equals(RECOGNIZE)) {
+                                    dbManager.addAttRecord(new AttendanceRecord(subject));
+                                }
+                                else if(apiService.equals(ENROLL)) {
+                                    dbManager.addStudent(new AttendanceRecord(subject));
+                                }
+                            }
+                            else {
+                                resultMessage = apiService+" : "+kairosStatus+" - "+
+                                        transaction.getString(MESSAGE_FAILURE);
+                            }
                         }
                     } catch(JSONException j) {
                         Log.i(TAG, "Problem in parsing response JSON");
@@ -186,8 +240,14 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String s) {
-            subjectText.setText("");
-            status.setText(s);
+            if(alertDialog.isShowing()) {
+                alertDialog.dismiss();
+            }
+            for(Button b : buttons) {
+                b.setEnabled(true);
+            }
+            alertDialog.setMessage(s);
+            alertDialog.show();
             super.onPostExecute(s);
         }
     }

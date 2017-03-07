@@ -21,7 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EnrollActivity"></activity>
+        <activity android:name=".EnrollActivity" />
+        <activity android:name=".ViewAttendanceActivity"></activity>
     </application>
 
 </manifest>

@@ -11,25 +11,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.farecat.farecat.MainActivity">
 
-    <Button
-        android:text="Recognize"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/recognizeButton"
-        android:onClick="takePhoto"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/enrollButton"
-        android:layout_marginBottom="18dp" />
-
-    <Button
-        android:text="Enroll"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/enrollButton"
-        android:onClick="takePhoto"
-        android:layout_above="@+id/recognizeButton"
+        android:layout_below="@+id/enrollButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="19dp" />
+        android:layout_marginTop="53dp"
+        android:id="@+id/attRecView" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -37,15 +25,37 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/subjectText"
-        android:layout_marginTop="67dp"
+        android:layout_marginTop="17dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <TextView
+    <Button
+        android:text="Enroll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/statusTextView"
-        android:layout_centerVertical="true"
+        android:id="@+id/enrollButton"
+        android:onClick="takePhoto"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/subjectText"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="View attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recognizeButton"
         android:layout_centerHorizontal="true"
-        android:textSize="30sp" />
+        android:layout_marginTop="71dp"
+        android:id="@+id/viewAttendancePageButton"
+        android:onClick="goToAttendance" />
+
+    <Button
+        android:text="Recognize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recognizeButton"
+        android:onClick="takePhoto"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
