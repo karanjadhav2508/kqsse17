@@ -115,11 +115,11 @@ public class MainActivity extends AppCompatActivity {
                 alertDialog.show();
                 return;
             }
-            if(dbManager.isEnrolled(subject_id)) {
+            /*if(dbManager.isEnrolled(subject_id)) {
                 alertDialog.setMessage(subject_id+ALREADY_ENROLLED);
                 alertDialog.show();
                 return;
-            }
+            }*/
         }
         Intent photoIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(photoIntent, REQUEST_IMAGE_CAPTURE);
@@ -166,28 +166,10 @@ public class MainActivity extends AppCompatActivity {
         protected String doInBackground(String... params) {
             String resultMessage = "";
             String base64Photo = params[0];
-            JSONObject json = new JSONObject();
-            Log.i(TAG, "Kairos API call :\nSERVICE : "+apiService+" GALLERY : "+GALLERY_VALUE);
-            try {
-                json.putOpt(IMAGE, base64Photo);
-                json.putOpt(GALLERY_NAME, GALLERY_VALUE);
-                if(apiService.equals(ENROLL)) {
-                    Log.i(TAG, "SUBJECT : "+subject_id);
-                    json.putOpt(SUBJECT_ID, subject_id);
-                }
-            } catch(JSONException j) {
-                Log.i(TAG, "Problem in adding parameters to JSON");
-                j.printStackTrace();
-            }
-            RequestBody requestBody = RequestBody.create(JSON, json.toString());
-            Request request = new Request.Builder()
-                    .url(KAIROS_DOMAIN+"/"+apiService)
-                    .addHeader(APP_ID, APP_ID_VALUE)
-                    .addHeader(APP_KEY, APP_KEY_VALUE)
-                    .addHeader(CONTENT, CONTENT_TYPE)
-                    .post(requestBody)
-                    .build();
 
+            //Content of buildRequest goes here
+
+            Request request = buildRequest(base64Photo, apiService);
             Response response = null;
             try {
                 response = client.newCall(request).execute();
@@ -213,9 +195,9 @@ public class MainActivity extends AppCompatActivity {
                                 if(apiService.equals(RECOGNIZE)) {
                                     dbManager.addAttRecord(new AttendanceRecord(subject));
                                 }
-                                else if(apiService.equals(ENROLL)) {
+                                /*else if(apiService.equals(ENROLL)) {
                                     dbManager.addStudent(new AttendanceRecord(subject));
-                                }
+                                }*/
                             }
                             else {
                                 resultMessage = apiService+" : "+kairosStatus+" - "+
@@ -236,6 +218,32 @@ public class MainActivity extends AppCompatActivity {
                 i.printStackTrace();
             }
             return resultMessage;
+        }
+
+        private Request buildRequest(String base64Photo, String apiService) {
+            JSONObject json = new JSONObject();
+            Log.i(TAG, "Kairos API call :\nSERVICE : "+apiService+" GALLERY : "+GALLERY_VALUE);
+            try {
+                json.putOpt(IMAGE, base64Photo);
+                json.putOpt(GALLERY_NAME, GALLERY_VALUE);
+                if(apiService.equals(ENROLL)) {
+                    Log.i(TAG, "SUBJECT : "+subject_id);
+                    json.putOpt(SUBJECT_ID, subject_id);
+                }
+            } catch(JSONException j) {
+                Log.i(TAG, "Problem in adding parameters to JSON");
+                j.printStackTrace();
+            }
+            RequestBody requestBody = RequestBody.create(JSON, json.toString());
+            Request request = new Request.Builder()
+                    .url(KAIROS_DOMAIN+"/"+apiService)
+                    .addHeader(APP_ID, APP_ID_VALUE)
+                    .addHeader(APP_KEY, APP_KEY_VALUE)
+                    .addHeader(CONTENT, CONTENT_TYPE)
+                    .post(requestBody)
+                    .build();
+
+            return request;
         }
 
         @Override
