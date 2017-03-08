@@ -115,11 +115,6 @@ public class MainActivity extends AppCompatActivity {
                 alertDialog.show();
                 return;
             }
-            /*if(dbManager.isEnrolled(subject_id)) {
-                alertDialog.setMessage(subject_id+ALREADY_ENROLLED);
-                alertDialog.show();
-                return;
-            }*/
         }
         Intent photoIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(photoIntent, REQUEST_IMAGE_CAPTURE);
@@ -167,11 +162,47 @@ public class MainActivity extends AppCompatActivity {
             String resultMessage = "";
             String base64Photo = params[0];
 
-            //Content of buildRequest goes here
-
             Request request = buildRequest(base64Photo, apiService);
             Response response = null;
+            ResponseResult rr = new ResponseResult();
+            String respJsonString = "";
+
             try {
+                if(apiService.equals(ENROLL)) {
+                    Request recRequest = buildRequest(base64Photo, RECOGNIZE);
+                    Response recResponse = client.newCall(recRequest).execute();
+                    if(recResponse != null && recResponse.isSuccessful()) {
+                        String recResponseJSON = recResponse.body().string();
+                        ResponseResult recRespResult = parseJSONResponse(recResponseJSON);
+                        if(!recRespResult.isSuccessful()) {
+                            response = client.newCall(request).execute();
+                            if(response != null && response.isSuccessful()) {
+                                respJsonString = response.body().string();
+                                rr = parseJSONResponse(respJsonString);
+                            }
+                        }
+                        else {
+                            rr.setResultMessage("User image already registered.");
+                        }
+                    }
+                }
+                else if(apiService.equals(RECOGNIZE)) {
+                    response = client.newCall(request).execute();
+                    if(response != null && response.isSuccessful()) {
+                        respJsonString = response.body().string();
+                        rr = parseJSONResponse(respJsonString);
+                        if(rr.isSuccessful()) {
+                            dbManager.addAttRecord(new AttendanceRecord(subject_id));
+                        }
+                    }
+                }
+            } catch(IOException i) {
+                Log.i(TAG, "Problem in :\n1. Executing Kairon POST request\nOR\n2.Getting body of response");
+                i.printStackTrace();
+                rr.setResultMessage(COMM_PROBLEM);
+            }
+            return rr.getResultMessage();
+            /*try {
                 response = client.newCall(request).execute();
                 if(response != null && response.isSuccessful()) {
                     Log.i(TAG, "Response successful");
@@ -195,9 +226,6 @@ public class MainActivity extends AppCompatActivity {
                                 if(apiService.equals(RECOGNIZE)) {
                                     dbManager.addAttRecord(new AttendanceRecord(subject));
                                 }
-                                /*else if(apiService.equals(ENROLL)) {
-                                    dbManager.addStudent(new AttendanceRecord(subject));
-                                }*/
                             }
                             else {
                                 resultMessage = apiService+" : "+kairosStatus+" - "+
@@ -217,7 +245,7 @@ public class MainActivity extends AppCompatActivity {
                 resultMessage = COMM_PROBLEM;
                 i.printStackTrace();
             }
-            return resultMessage;
+            return resultMessage;*/
         }
 
         private Request buildRequest(String base64Photo, String apiService) {
@@ -246,6 +274,38 @@ public class MainActivity extends AppCompatActivity {
             return request;
         }
 
+        private ResponseResult parseJSONResponse(String respJsonString) {
+            ResponseResult rr = new ResponseResult();
+            try {
+                Log.i(TAG, "JSON : "+respJsonString);
+                JSONObject jo = new JSONObject(respJsonString);
+                if(jo.has(ERRORS)) {
+                    String kairosError = ((JSONObject)jo.getJSONArray(ERRORS).get(0)).getString(MESSAGE);
+                    rr.setResultMessage(apiService+" : "+kairosError);
+                    Log.i(TAG, "kairosError : " + kairosError);
+                }
+                else {
+                    JSONObject transaction =((JSONObject)jo.getJSONArray(IMAGES).get(0))
+                            .getJSONObject(TRANSACTION);
+                    String kairosStatus = transaction.getString(STATUS);
+                    Log.i(TAG, "kairosStatus : " + kairosStatus);
+                    if(kairosStatus.equals(SUCCESS)) {
+                        String subject = transaction.getString(SUBJECT_ID);
+                        rr.setResultMessage(apiService+" "+subject+" : "+kairosStatus);
+                        rr.setSuccessful(true);
+                    }
+                    else {
+                        rr.setResultMessage(apiService+" : "+kairosStatus+" - "+
+                                transaction.getString(MESSAGE_FAILURE));
+                    }
+                }
+            } catch(JSONException j) {
+                Log.i(TAG, "Problem in parsing response JSON");
+                j.printStackTrace();
+            }
+            return rr;
+        }
+
         @Override
         protected void onPostExecute(String s) {
             if(alertDialog.isShowing()) {
@@ -259,4 +319,23 @@ public class MainActivity extends AppCompatActivity {
             super.onPostExecute(s);
         }
     }
+
+    private class ResponseResult {
+        private boolean isSuccessful = false;
+        private String resultMessage = "";
+
+        public void setResultMessage(String resultMessage) {
+            this.resultMessage = resultMessage;
+        }
+        public void setSuccessful(boolean successful) {
+            isSuccessful = successful;
+        }
+        public boolean isSuccessful() {
+            return isSuccessful;
+        }
+        public String getResultMessage() {
+            return resultMessage;
+        }
+    }
+
 }
