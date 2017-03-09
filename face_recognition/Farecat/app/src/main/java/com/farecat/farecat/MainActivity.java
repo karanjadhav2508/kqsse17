@@ -1,8 +1,6 @@
 package com.farecat.farecat;
 
-import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -16,11 +14,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 
 import com.farecat.farecat.helpers.AlertDialogHelper;
 import com.farecat.farecat.records.AttendanceRecord;
 import com.farecat.farecat.records.DBManager;
+import com.farecat.farecat.kairos.Kairos;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -38,35 +36,13 @@ import okhttp3.Response;
 public class MainActivity extends AppCompatActivity {
 
     static final int REQUEST_IMAGE_CAPTURE = 1;
-    public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
+    private static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
     private static final String CONTENT = "Content-Type";
     private static final String CONTENT_TYPE = "application/json";
 
     private final OkHttpClient client = new OkHttpClient();
 
-    static final String KAIROS_DOMAIN = "https://api.kairos.com";
-    private static final String ENROLL = "enroll";
-    private static final String RECOGNIZE = "recognize";
-    private static final String APP_ID = "app_id";
-    private static final String APP_KEY = "app_key";
-    private static final String IMAGE = "image";
-    private static final String SUBJECT_ID = "subject_id";
-    private static final String GALLERY_NAME = "gallery_name";
-
-    private static final String IMAGES = "images";
-    private static final String TRANSACTION = "transaction";
-    private static final String STATUS = "status";
-    private static final String ERRORS = "Errors";
-    private static final String MESSAGE = "Message";
-    private static final String SUCCESS = "success";
-    private static final String MESSAGE_FAILURE = "message";
-
-    private static final String APP_ID_VALUE = "76395980";
-    private static final String APP_KEY_VALUE = "fe00f9411bbadb0269b4f0757050aaf2";
-    private static final String GALLERY_VALUE = "students";
-
     private static final String EMPTY_USER = "User name cannot be blank";
-    private static final String ALREADY_ENROLLED = " is already enrolled";
     private static final String COMM_PROBLEM = "Communication problem. Please try again.";
 
     private DBManager dbManager;
@@ -108,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void takePhoto(View v) {
         apiService = ((Button)v).getText().toString().toLowerCase();
-        if(apiService.equals(ENROLL)) {
+        if(apiService.equals(Kairos.ENROLL)) {
             subject_id = subjectText.getText().toString();
             if(subject_id.matches("")) {
                 alertDialog.setMessage(EMPTY_USER);
@@ -168,8 +144,8 @@ public class MainActivity extends AppCompatActivity {
             String respJsonString = "";
 
             try {
-                if(apiService.equals(ENROLL)) {
-                    Request recRequest = buildRequest(base64Photo, RECOGNIZE);
+                if(apiService.equals(Kairos.ENROLL)) {
+                    Request recRequest = buildRequest(base64Photo, Kairos.RECOGNIZE);
                     Response recResponse = client.newCall(recRequest).execute();
                     if(recResponse != null && recResponse.isSuccessful()) {
                         String recResponseJSON = recResponse.body().string();
@@ -186,13 +162,13 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 }
-                else if(apiService.equals(RECOGNIZE)) {
+                else if(apiService.equals(Kairos.RECOGNIZE)) {
                     response = client.newCall(request).execute();
                     if(response != null && response.isSuccessful()) {
                         respJsonString = response.body().string();
                         rr = parseJSONResponse(respJsonString);
                         if(rr.isSuccessful()) {
-                            dbManager.addAttRecord(new AttendanceRecord(subject_id));
+                            dbManager.addAttRecord(new AttendanceRecord(rr.getSubject()));
                         }
                     }
                 }
@@ -202,61 +178,17 @@ public class MainActivity extends AppCompatActivity {
                 rr.setResultMessage(COMM_PROBLEM);
             }
             return rr.getResultMessage();
-            /*try {
-                response = client.newCall(request).execute();
-                if(response != null && response.isSuccessful()) {
-                    Log.i(TAG, "Response successful");
-                    String respJsonString = response.body().string();
-                    try {
-                        JSONObject jo = new JSONObject(respJsonString);
-                        Log.i(TAG, "Response JSON : "+respJsonString);
-                        if(jo.has(ERRORS)) {
-                            String kairosError = ((JSONObject)jo.getJSONArray(ERRORS).get(0)).getString(MESSAGE);
-                            Log.i(TAG, "Kairos Error : "+kairosError);
-                            resultMessage = apiService+" : "+kairosError;
-                        }
-                        else {
-                            JSONObject transaction =((JSONObject)jo.getJSONArray(IMAGES).get(0))
-                                    .getJSONObject(TRANSACTION);
-                            String kairosStatus = transaction.getString(STATUS);
-                            Log.i(TAG, "Kairos Status : "+kairosStatus);
-                            if(kairosStatus.equals(SUCCESS)) {
-                                String subject = transaction.getString(SUBJECT_ID);
-                                resultMessage = apiService+" "+subject+" : "+kairosStatus;
-                                if(apiService.equals(RECOGNIZE)) {
-                                    dbManager.addAttRecord(new AttendanceRecord(subject));
-                                }
-                            }
-                            else {
-                                resultMessage = apiService+" : "+kairosStatus+" - "+
-                                        transaction.getString(MESSAGE_FAILURE);
-                            }
-                        }
-                    } catch(JSONException j) {
-                        Log.i(TAG, "Problem in parsing response JSON");
-                        j.printStackTrace();
-                    }
-                }
-                else {
-                    Log.i(TAG, "Response failed : "+response.code());
-                }
-            } catch(IOException i) {
-                Log.i(TAG, "Problem in :\n1. Executing Kairon POST request\nOR\n2.Getting body of response");
-                resultMessage = COMM_PROBLEM;
-                i.printStackTrace();
-            }
-            return resultMessage;*/
         }
 
         private Request buildRequest(String base64Photo, String apiService) {
             JSONObject json = new JSONObject();
-            Log.i(TAG, "Kairos API call :\nSERVICE : "+apiService+" GALLERY : "+GALLERY_VALUE);
+            Log.i(TAG, "Kairos API call :\nSERVICE : "+apiService+" GALLERY : "+Kairos.GALLERY_VALUE);
             try {
-                json.putOpt(IMAGE, base64Photo);
-                json.putOpt(GALLERY_NAME, GALLERY_VALUE);
-                if(apiService.equals(ENROLL)) {
+                json.putOpt(Kairos.IMAGE, base64Photo);
+                json.putOpt(Kairos.GALLERY_NAME, Kairos.GALLERY_VALUE);
+                if(apiService.equals(Kairos.ENROLL)) {
                     Log.i(TAG, "SUBJECT : "+subject_id);
-                    json.putOpt(SUBJECT_ID, subject_id);
+                    json.putOpt(Kairos.SUBJECT_ID, subject_id);
                 }
             } catch(JSONException j) {
                 Log.i(TAG, "Problem in adding parameters to JSON");
@@ -264,9 +196,9 @@ public class MainActivity extends AppCompatActivity {
             }
             RequestBody requestBody = RequestBody.create(JSON, json.toString());
             Request request = new Request.Builder()
-                    .url(KAIROS_DOMAIN+"/"+apiService)
-                    .addHeader(APP_ID, APP_ID_VALUE)
-                    .addHeader(APP_KEY, APP_KEY_VALUE)
+                    .url(Kairos.KAIROS_DOMAIN+"/"+apiService)
+                    .addHeader(Kairos.APP_ID, Kairos.APP_ID_VALUE)
+                    .addHeader(Kairos.APP_KEY, Kairos.APP_KEY_VALUE)
                     .addHeader(CONTENT, CONTENT_TYPE)
                     .post(requestBody)
                     .build();
@@ -279,24 +211,25 @@ public class MainActivity extends AppCompatActivity {
             try {
                 Log.i(TAG, "JSON : "+respJsonString);
                 JSONObject jo = new JSONObject(respJsonString);
-                if(jo.has(ERRORS)) {
-                    String kairosError = ((JSONObject)jo.getJSONArray(ERRORS).get(0)).getString(MESSAGE);
+                if(jo.has(Kairos.ERRORS)) {
+                    String kairosError = ((JSONObject)jo.getJSONArray(Kairos.ERRORS).get(0)).getString(Kairos.MESSAGE);
                     rr.setResultMessage(apiService+" : "+kairosError);
                     Log.i(TAG, "kairosError : " + kairosError);
                 }
                 else {
-                    JSONObject transaction =((JSONObject)jo.getJSONArray(IMAGES).get(0))
-                            .getJSONObject(TRANSACTION);
-                    String kairosStatus = transaction.getString(STATUS);
+                    JSONObject transaction =((JSONObject)jo.getJSONArray(Kairos.IMAGES).get(0))
+                            .getJSONObject(Kairos.TRANSACTION);
+                    String kairosStatus = transaction.getString(Kairos.STATUS);
                     Log.i(TAG, "kairosStatus : " + kairosStatus);
-                    if(kairosStatus.equals(SUCCESS)) {
-                        String subject = transaction.getString(SUBJECT_ID);
-                        rr.setResultMessage(apiService+" "+subject+" : "+kairosStatus);
+                    if(kairosStatus.equals(Kairos.SUCCESS)) {
                         rr.setSuccessful(true);
+                        String subject = transaction.getString(Kairos.SUBJECT_ID);
+                        rr.setSubject(subject);
+                        rr.setResultMessage(apiService+" "+subject+" : "+kairosStatus);
                     }
                     else {
                         rr.setResultMessage(apiService+" : "+kairosStatus+" - "+
-                                transaction.getString(MESSAGE_FAILURE));
+                                transaction.getString(Kairos.MESSAGE_FAILURE));
                     }
                 }
             } catch(JSONException j) {
@@ -322,6 +255,7 @@ public class MainActivity extends AppCompatActivity {
 
     private class ResponseResult {
         private boolean isSuccessful = false;
+        private String subject = "";
         private String resultMessage = "";
 
         public void setResultMessage(String resultMessage) {
@@ -336,6 +270,11 @@ public class MainActivity extends AppCompatActivity {
         public String getResultMessage() {
             return resultMessage;
         }
+        public String getSubject() {
+            return subject;
+        }
+        public void setSubject(String subject) {
+            this.subject = subject;
+        }
     }
-
 }
