@@ -1,0 +1,16 @@
+Issue
+
+issue id : issue_id
+issue name : None
+creation time : when
+action performed : action
+user associated with action : user
+
+Milestone
+
+Milestone ID : None
+Description : milestone
+Creation Time : None
+Due Time : None
+Closed Time : None
+User who created it : None
