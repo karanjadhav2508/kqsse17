@@ -1,0 +1,29 @@
+Extracter Questions- Things to Consider when looking at Data.
+
+1. Looking at nonCLosed Issues: Are they too General?
+  Issues that are not closed could be too general and may be better placed as Milestones. Issues should be relatively specific
+  and require definitive actions to close while milestones are overreaching general goals made up of specific and definitive issues. 
+  Looking at the data (presumably) there are many issues that have not been closed. Is it possible that these issues should have been
+  milestones and broken up into small issues to facilitate better organization and project timing.
+  Data needed for this:   Issue closure, Issue Name/topic, Issue comments, attached Milestone
+  
+2. Looking at issues not attached to milestones: Should they have been a part of a milestone?
+    Issues that aren't in any milestone could mean disorganization and they could mean that that issue should be a Milestone itself (such 
+    as if it corrolates with question 1. So were they true outliers of the topics of issues actually in the milestone? Or should they 
+    have been in one of the milestones created.
+    
+3. Commit date range: When were certain types of commits created vs. Class project schedule. 
+    Sudden commits near the end of Jan. or Feb. could indicate procrastination or team dificulties. Late Code commits( past halfway 
+    through march) could also indicate this. 
+    
+ 4. Number of user commits per user and when:
+     Is a certain user(s) posting all the commits near a deadline? This user could be the key user contributing to the entire projec
+     (picking up the slack for the others) or are there any strange patterns for where users are commiting. 
+     
+ 5. Comments and users: 
+     Are there issues that users interact with each other in, with multiple comments. Or are all issues handled by one person each, where 
+     that one person comments all work done? Collaborative issues could indicate discussion and team collaboration for ideas and work. 
+     However, issues handled by an individual if it was assigned could indicate good organization.
+     
+ 
+      
