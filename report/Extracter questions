@@ -7,23 +7,35 @@ Extracter Questions- Things to Consider when looking at Data.
   milestones and broken up into small issues to facilitate better organization and project timing.
   Data needed for this:   Issue closure, Issue Name/topic, Issue comments, attached Milestone
   
+  Comments : Analysing the "generality" of an issue based on the two fields, issue name and issue comments, seems to be difficult. 
+  No number based fields are present, text analysis will need to be done.
+  
 2. Looking at issues not attached to milestones: Should they have been a part of a milestone?
     Issues that aren't in any milestone could mean disorganization and they could mean that that issue should be a Milestone itself (such 
     as if it corrolates with question 1. So were they true outliers of the topics of issues actually in the milestone? Or should they 
     have been in one of the milestones created.
     
+  Comments : While this could be a possibility, that standalone issues imply lack of organization, however an additional field 
+  that will help support this hypothesis is the final status of the issue, ie, was it closed.
+    
 3. Commit date range: When were certain types of commits created vs. Class project schedule. 
     Sudden commits near the end of Jan. or Feb. could indicate procrastination or team dificulties. Late Code commits( past halfway 
     through march) could also indicate this. 
+    
+  Comments : Instead of class project schedules(which is data not associated with a repo), maybe a better indicator will be planned end 
+  dates of issues/milestones and whether commits around these times increase.
     
  4. Number of user commits per user and when:
      Is a certain user(s) posting all the commits near a deadline? This user could be the key user contributing to the entire projec
      (picking up the slack for the others) or are there any strange patterns for where users are commiting. 
      
+  Comments : Not just near deadlines, but one user making more commits and/or more lines-of-code/commit in general could indicate work 
+     being done by just one person
+     
  5. Comments and users: 
      Are there issues that users interact with each other in, with multiple comments. Or are all issues handled by one person each, where 
      that one person comments all work done? Collaborative issues could indicate discussion and team collaboration for ideas and work. 
      However, issues handled by an individual if it was assigned could indicate good organization.
-     
- 
+  
+  ADDITIONAL EXTRACTORS
       
