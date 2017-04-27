@@ -38,4 +38,21 @@ Extracter Questions- Things to Consider when looking at Data.
      However, issues handled by an individual if it was assigned could indicate good organization.
   
   ADDITIONAL EXTRACTORS
+  
+  Issues
+
+1. Non closed issues
+2. Issues taking too much time
+3. Issues associated with only one user
+4. Standalone issues
+
+Commits
+
+1. Lesser commits
+2. Higher commits
+
+Milestones
+
+1. Incomplete milestones
+2. Long running milestones
       
