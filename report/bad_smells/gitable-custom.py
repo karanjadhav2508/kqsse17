@@ -43,7 +43,7 @@ def dump1(u,issues, mapping):
 	requires github access token
 	returns dictionary of labeled issues with its list of events.
 	"""
-	token = "41b4280e19ecce96dfa85210ac7e696958db9ee8" #can set token here
+	token = "" #can set token here
 	
 	if token == "<your_token>":
 		try:  
