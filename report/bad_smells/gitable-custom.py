@@ -43,7 +43,7 @@ def dump1(u,issues, mapping):
 	requires github access token
 	returns dictionary of labeled issues with its list of events.
 	"""
-	token = "" #can set token here
+	token = "04c97a3df2f9ae4cec86ed75f82f9356df7157c8" #can set token here
 	
 	if token == "<your_token>":
 		try:  
@@ -62,10 +62,12 @@ def dump1(u,issues, mapping):
 	random.shuffle(w)
 	
 	for event in w:
-		# if not event.get('label'):
-		# 	continue
+
+		# print_dict(event)
+		# sys.exit(0)
 
 		issue_id = event['issue']['number']
+		issue_name = event['issue']['title']
 		#created_at = secs(event['created_at'])
 		created_at = event['created_at']
 		action = event['event']
@@ -76,19 +78,45 @@ def dump1(u,issues, mapping):
 		#label_name = event['label']['name']
 		
 		milestone = event['issue']['milestone']
+		m = False
 		if milestone != None : 
-			milestone = milestone['title']
+			m = True
+			ms_id = milestone['number']
+			ms_desc = milestone['description']
+			ms_title = milestone['title']
+			ms_user = milestone['creator']['login']
+			ms_ctime = milestone['created_at']
+			ms_duetime = milestone['due_on']
+			ms_closetime = milestone['closed_at']
+			ms_status = milestone['state']
 		
 		user = event['actor']['login']
 		if not mapping.get(user):
 			mapping[user] = "user{}".format(len(mapping)+1)
 		user = mapping[user]
 
-		eventObj = L(when=created_at,
-					 action = action,
-					 what = label_name,
-					 user = user,
-					 milestone = milestone)
+		if milestone != None:
+			eventObj = L(when = created_at,
+						 action = action,
+						 what = label_name,
+						 user = user,
+						 issuename = issue_name,
+						 m = True,
+						 milestone = ms_title,
+						 ms_id = ms_id,
+						 ms_desc = ms_desc,
+						 ms_user = ms_user,
+						 ms_ctime = ms_ctime,
+						 ms_duetime = ms_duetime,
+						 ms_closetime = ms_closetime,
+						 ms_status = ms_status)
+		else:
+			eventObj = L(when = created_at,
+						 action = action,
+						 what = label_name,
+						 user = user,
+						 issuename = issue_name,
+						 m = False)
 		
 		#issueObj = L(created=created_at)
 
@@ -100,6 +128,13 @@ def dump1(u,issues, mapping):
 		events.sort(key=lambda event: event.when)
 
 	return True
+
+def print_dict(d):
+	for k in d:
+		if type(k) is dict:
+			print_dict(k)
+		else:
+			print(str(k)+" : "+str(d[k]))
 
 def dump(u,issues, mapping):
 	try:
@@ -136,13 +171,25 @@ def launchDump():
 			for username, user_id in mapping.items():
 				outputWriter.writerow([username, user_id])
 
+		# ms_id = milestone['number']
+		# 	ms_desc = milestone['description']
+		# 	milestone = milestone['title']
+		# 	ms_user = milestone['creator']['login']
+		# 	ms_ctime = milestone['created_at']
+		# 	ms_duetime = milestone['due_on']
+		# 	ms_closetime = milestone['closed_at']
+
 		filename = group_id+".csv"
 		with open(filename, 'w', newline='') as outputFile:
 			outputWriter = csv.writer(outputFile)
-			outputWriter.writerow(["issue_id", "when", "action", "what", "user", "milestone"])
+			outputWriter.writerow(["issue_id", "issue_name", "when", "action", "what", "user", "milestone_id", "milestone", "description", "milestone_user", "ctime", "dtime", "closetime", "status"])
 			for issue, events in issues.items():
-				for event in events: 
-					outputWriter.writerow([issue, event.when, event.action, event.what, event.user, event.milestone])
+				for event in events:
+					if event.m:
+						outputWriter.writerow([issue, event.issuename, event.when, event.action, event.what, event.user, event.ms_id, event.milestone, event.ms_desc, event.ms_user, event.ms_ctime, event.ms_duetime, event.ms_closetime, event.ms_status])
+					else:
+						outputWriter.writerow([issue, event.issuename, event.when, event.action, event.what, event.user])
+
 
 
 launchDump()
