@@ -1,0 +1,1029 @@
+issue_id,issue_name,when,action,what,user,milestone_id,milestone,description,milestone_user,ctime,dtime,closetime,status
+17,Mile stone wrapping up (due 27FEB),2017-01-31T02:35:41Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+17,Mile stone wrapping up (due 27FEB),2017-01-31T02:35:41Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+17,Mile stone wrapping up (due 27FEB),2017-03-14T03:17:52Z,closed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+13,Announcements - FEB milestone,2017-01-31T02:08:02Z,assigned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+13,Announcements - FEB milestone,2017-01-31T02:08:02Z,assigned,,user4,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+13,Announcements - FEB milestone,2017-01-31T02:08:02Z,assigned,,user3,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+13,Announcements - FEB milestone,2017-01-31T02:08:02Z,assigned,,user5,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+13,Announcements - FEB milestone,2017-01-31T02:08:02Z,assigned,,user2,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+13,Announcements - FEB milestone,2017-01-31T02:35:41Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+13,Announcements - FEB milestone,2017-01-31T02:35:41Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+13,Announcements - FEB milestone,2017-02-11T19:02:03Z,mentioned,,user2,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+13,Announcements - FEB milestone,2017-02-11T19:02:03Z,subscribed,,user2,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+13,Announcements - FEB milestone,2017-02-11T19:02:03Z,subscribed,,user3,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+13,Announcements - FEB milestone,2017-02-11T19:02:03Z,mentioned,,user3,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+13,Announcements - FEB milestone,2017-03-14T03:17:52Z,closed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+20,Build database node js interface,2017-02-07T21:54:51Z,converted_note_to_issue,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+20,Build database node js interface,2017-02-07T21:55:19Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+20,Build database node js interface,2017-02-07T21:55:19Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+20,Build database node js interface,2017-02-07T21:56:39Z,labeled,enhancement,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+20,Build database node js interface,2017-02-10T15:03:57Z,moved_columns_in_project,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+20,Build database node js interface,2017-02-22T21:43:52Z,closed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+29,[Christine- 2days] Build the most basic simulation interacting with database,2017-02-09T14:53:27Z,converted_note_to_issue,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+29,[Christine- 2days] Build the most basic simulation interacting with database,2017-02-09T14:54:34Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+29,[Christine- 2days] Build the most basic simulation interacting with database,2017-02-09T14:54:34Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+29,[Christine- 2days] Build the most basic simulation interacting with database,2017-02-22T21:44:19Z,closed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+21,Matt - Research Auto-Refresh on mobile app screeen,2017-02-07T21:54:53Z,converted_note_to_issue,,user3,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+21,Matt - Research Auto-Refresh on mobile app screeen,2017-02-07T21:55:20Z,milestoned,,user3,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+21,Matt - Research Auto-Refresh on mobile app screeen,2017-02-07T21:55:20Z,milestoned,,user3,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+21,Matt - Research Auto-Refresh on mobile app screeen,2017-02-08T21:21:12Z,removed_from_project,,user3,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+21,Matt - Research Auto-Refresh on mobile app screeen,2017-02-22T21:44:11Z,closed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+16,Demo finalization (due 20FEB),2017-01-31T02:35:41Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+16,Demo finalization (due 20FEB),2017-01-31T02:35:41Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+16,Demo finalization (due 20FEB),2017-02-17T14:19:21Z,subscribed,,user2,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+16,Demo finalization (due 20FEB),2017-02-17T14:19:21Z,mentioned,,user2,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+16,Demo finalization (due 20FEB),2017-02-17T14:19:21Z,subscribed,,user3,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+16,Demo finalization (due 20FEB),2017-02-17T14:19:21Z,mentioned,,user3,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+16,Demo finalization (due 20FEB),2017-03-14T03:17:52Z,closed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+24,[Matt - 13FEB] Add Threat Map Buttons,2017-02-08T21:23:25Z,converted_note_to_issue,,user3,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+24,[Matt - 13FEB] Add Threat Map Buttons,2017-02-09T14:52:14Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+24,[Matt - 13FEB] Add Threat Map Buttons,2017-02-09T14:52:14Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+24,[Matt - 13FEB] Add Threat Map Buttons,2017-02-11T04:36:39Z,subscribed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+24,[Matt - 13FEB] Add Threat Map Buttons,2017-02-11T04:36:39Z,mentioned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+24,[Matt - 13FEB] Add Threat Map Buttons,2017-02-20T17:51:36Z,moved_columns_in_project,,user3,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+24,[Matt - 13FEB] Add Threat Map Buttons,2017-02-22T21:44:11Z,closed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+30,[Tam - 10FEB] Display data from all tables,2017-02-09T14:53:36Z,converted_note_to_issue,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+30,[Tam - 10FEB] Display data from all tables,2017-02-09T14:54:34Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+30,[Tam - 10FEB] Display data from all tables,2017-02-09T14:54:34Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+30,[Tam - 10FEB] Display data from all tables,2017-02-10T15:04:01Z,moved_columns_in_project,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+30,[Tam - 10FEB] Display data from all tables,2017-02-12T16:53:40Z,closed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+30,[Tam - 10FEB] Display data from all tables,2017-02-12T16:55:20Z,moved_columns_in_project,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+23,Group meeting on Feb. 14. (3 p.m.) at room 2323 in Hunt Library,2017-02-09T14:52:14Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+23,Group meeting on Feb. 14. (3 p.m.) at room 2323 in Hunt Library,2017-02-09T14:52:14Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+23,Group meeting on Feb. 14. (3 p.m.) at room 2323 in Hunt Library,2017-02-15T17:26:06Z,closed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+25,"[Matt - 17FEB] Auto Refresh, No Finger",2017-02-08T21:24:33Z,converted_note_to_issue,,user3,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+25,"[Matt - 17FEB] Auto Refresh, No Finger",2017-02-09T14:52:14Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+25,"[Matt - 17FEB] Auto Refresh, No Finger",2017-02-09T14:52:14Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+25,"[Matt - 17FEB] Auto Refresh, No Finger",2017-02-20T17:51:19Z,moved_columns_in_project,,user3,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+25,"[Matt - 17FEB] Auto Refresh, No Finger",2017-02-22T21:44:11Z,closed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+22,[Christine] researching and implementing andoid push notifications / server set up(php),2017-02-07T21:55:44Z,converted_note_to_issue,,user2,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+22,[Christine] researching and implementing andoid push notifications / server set up(php),2017-02-07T21:56:06Z,milestoned,,user2,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+22,[Christine] researching and implementing andoid push notifications / server set up(php),2017-02-07T21:57:49Z,renamed,,user2,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+22,[Christine] researching and implementing andoid push notifications / server set up(php),2017-02-13T16:34:24Z,renamed,,user2,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+22,[Christine] researching and implementing andoid push notifications / server set up(php),2017-02-22T21:44:11Z,closed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+27,[Tam - 6 days] Researching for simulation options,2017-02-09T14:52:51Z,converted_note_to_issue,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+27,[Tam - 6 days] Researching for simulation options,2017-02-09T14:54:34Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+27,[Tam - 6 days] Researching for simulation options,2017-02-09T14:54:34Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+27,[Tam - 6 days] Researching for simulation options,2017-02-12T16:54:04Z,closed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+32,Implementing google trends(include server setting),2017-02-09T14:54:11Z,converted_note_to_issue,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+32,Implementing google trends(include server setting),2017-02-09T14:54:34Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+32,Implementing google trends(include server setting),2017-02-09T14:54:34Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+32,Implementing google trends(include server setting),2017-02-23T01:17:05Z,closed,,user2,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+26,[Matt - 19FEB] Research Screen Share for Demo,2017-02-08T21:27:40Z,converted_note_to_issue,,user3,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+26,[Matt - 19FEB] Research Screen Share for Demo,2017-02-09T14:52:15Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+26,[Matt - 19FEB] Research Screen Share for Demo,2017-02-09T14:52:15Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+26,[Matt - 19FEB] Research Screen Share for Demo,2017-02-20T17:51:14Z,moved_columns_in_project,,user3,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+26,[Matt - 19FEB] Research Screen Share for Demo,2017-02-22T21:44:12Z,closed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+31,"[optional] Improve back up plan(better outlook, sync with up-to-date db setting, include google api features)",2017-02-09T14:54:00Z,converted_note_to_issue,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+31,"[optional] Improve back up plan(better outlook, sync with up-to-date db setting, include google api features)",2017-02-09T14:54:34Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+31,"[optional] Improve back up plan(better outlook, sync with up-to-date db setting, include google api features)",2017-02-09T14:54:34Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+31,"[optional] Improve back up plan(better outlook, sync with up-to-date db setting, include google api features)",2017-03-14T03:17:52Z,closed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+15,Second level prototyping (due 13FEB),2017-01-31T02:30:12Z,renamed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+15,Second level prototyping (due 13FEB),2017-01-31T02:35:41Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+15,Second level prototyping (due 13FEB),2017-01-31T02:35:41Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+15,Second level prototyping (due 13FEB),2017-02-15T17:26:28Z,closed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+28,"[ Tam - 1 day ] Wrap up simulation (back up database, basic tests, etc)",2017-02-09T14:53:10Z,converted_note_to_issue,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+28,"[ Tam - 1 day ] Wrap up simulation (back up database, basic tests, etc)",2017-02-09T14:54:34Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+28,"[ Tam - 1 day ] Wrap up simulation (back up database, basic tests, etc)",2017-02-09T14:54:34Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+28,"[ Tam - 1 day ] Wrap up simulation (back up database, basic tests, etc)",2017-02-12T16:53:51Z,closed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+14,First level prototyping (due 06FEB),2017-01-31T02:30:00Z,renamed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+14,First level prototyping (due 06FEB),2017-01-31T02:35:41Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+14,First level prototyping (due 06FEB),2017-01-31T02:35:41Z,milestoned,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+14,First level prototyping (due 06FEB),2017-02-07T18:43:35Z,mentioned,,user4,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+14,First level prototyping (due 06FEB),2017-02-07T18:43:35Z,subscribed,,user4,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+14,First level prototyping (due 06FEB),2017-02-07T18:43:35Z,subscribed,,user5,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+14,First level prototyping (due 06FEB),2017-02-07T18:43:35Z,mentioned,,user5,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+14,First level prototyping (due 06FEB),2017-02-11T18:55:57Z,closed,,user1,2,FEB Milestone,"+ Propose 3 different ways to solve X
++ Code demos showing the 3 solutions
++ Materials required for user eval sessions.",genterist,2017-01-20T15:25:23Z,2017-02-28T08:00:00Z,,open
+19,Weekly meeting on Feb 6 at 3 p.m. (Room 2323 in Hunt library),2017-02-04T14:36:29Z,closed,,user3
+19,Weekly meeting on Feb 6 at 3 p.m. (Room 2323 in Hunt library),2017-02-04T14:59:07Z,reopened,,user1
+19,Weekly meeting on Feb 6 at 3 p.m. (Room 2323 in Hunt library),2017-02-07T18:23:40Z,closed,,user1
+18,slide 17 is ... unusual,2017-02-04T14:27:57Z,closed,,user1
+7,Announcements,2017-01-18T05:39:41Z,milestoned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+7,Announcements,2017-01-18T05:39:41Z,assigned,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+7,Announcements,2017-01-18T05:39:41Z,assigned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+7,Announcements,2017-01-18T05:39:41Z,assigned,,user2,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+7,Announcements,2017-01-28T16:17:17Z,mentioned,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+7,Announcements,2017-01-28T16:17:17Z,subscribed,,user2,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+7,Announcements,2017-01-28T16:17:17Z,subscribed,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+7,Announcements,2017-01-28T16:17:17Z,mentioned,,user2,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+7,Announcements,2017-01-30T14:51:46Z,mentioned,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+7,Announcements,2017-01-30T14:51:46Z,subscribed,,user2,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+7,Announcements,2017-01-30T14:51:46Z,subscribed,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+7,Announcements,2017-01-30T14:51:46Z,mentioned,,user2,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+7,Announcements,2017-01-30T18:14:59Z,mentioned,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+7,Announcements,2017-01-30T18:14:59Z,subscribed,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+7,Announcements,2017-01-30T18:22:48Z,mentioned,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+7,Announcements,2017-01-30T18:22:48Z,subscribed,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+7,Announcements,2017-01-31T00:55:19Z,closed,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+3,Find a group of users with experience on Hospital acquired infections,2017-01-18T05:14:07Z,milestoned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+3,Find a group of users with experience on Hospital acquired infections,2017-01-18T05:41:28Z,assigned,,user2,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+3,Find a group of users with experience on Hospital acquired infections,2017-01-18T05:41:43Z,assigned,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+3,Find a group of users with experience on Hospital acquired infections,2017-01-18T05:41:52Z,assigned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+3,Find a group of users with experience on Hospital acquired infections,2017-01-20T04:32:59Z,mentioned,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+3,Find a group of users with experience on Hospital acquired infections,2017-01-20T04:32:59Z,mentioned,,user2,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+3,Find a group of users with experience on Hospital acquired infections,2017-01-20T04:32:59Z,subscribed,,user2,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+3,Find a group of users with experience on Hospital acquired infections,2017-01-20T04:32:59Z,subscribed,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+3,Find a group of users with experience on Hospital acquired infections,2017-01-28T16:01:29Z,closed,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+9,Team meeting 5(weekly),2017-01-20T04:33:34Z,milestoned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+9,Team meeting 5(weekly),2017-01-20T04:33:34Z,milestoned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+9,Team meeting 5(weekly),2017-01-28T16:02:09Z,closed,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+12,group meeting on Jan. 30 starts from 6 pm in Hunt Library Room 2323,2017-01-30T13:38:58Z,milestoned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+12,group meeting on Jan. 30 starts from 6 pm in Hunt Library Room 2323,2017-01-30T13:38:58Z,milestoned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+12,group meeting on Jan. 30 starts from 6 pm in Hunt Library Room 2323,2017-01-31T00:54:39Z,closed,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+4,How people have tried to solve Hospital acquired infection,2017-01-18T05:15:46Z,milestoned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+4,How people have tried to solve Hospital acquired infection,2017-01-18T05:41:28Z,assigned,,user2,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+4,How people have tried to solve Hospital acquired infection,2017-01-18T05:41:43Z,assigned,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+4,How people have tried to solve Hospital acquired infection,2017-01-18T05:41:52Z,assigned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+4,How people have tried to solve Hospital acquired infection,2017-01-28T16:01:45Z,closed,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+5,Prepare milestone briefing,2017-01-18T05:16:42Z,milestoned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+5,Prepare milestone briefing,2017-01-18T05:41:28Z,assigned,,user2,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+5,Prepare milestone briefing,2017-01-18T05:41:43Z,assigned,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+5,Prepare milestone briefing,2017-01-18T05:41:52Z,assigned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+5,Prepare milestone briefing,2017-01-27T22:56:14Z,assigned,,user5,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+5,Prepare milestone briefing,2017-01-27T22:59:14Z,subscribed,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+5,Prepare milestone briefing,2017-01-27T22:59:14Z,subscribed,,user4,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+5,Prepare milestone briefing,2017-01-27T22:59:14Z,mentioned,,user4,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+5,Prepare milestone briefing,2017-01-27T22:59:14Z,mentioned,,user5,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+5,Prepare milestone briefing,2017-01-27T22:59:14Z,subscribed,,user5,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+5,Prepare milestone briefing,2017-01-27T22:59:14Z,mentioned,,user2,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+5,Prepare milestone briefing,2017-01-27T22:59:14Z,subscribed,,user2,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+5,Prepare milestone briefing,2017-01-27T22:59:14Z,mentioned,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+5,Prepare milestone briefing,2017-01-30T14:52:57Z,closed,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+11,feed gorilla,2017-01-26T21:58:26Z,milestoned,,user5
+11,feed gorilla,2017-01-26T21:58:26Z,assigned,,user1
+11,feed gorilla,2017-01-27T22:55:39Z,closed,,user1
+1,Team meeting 3,2017-01-18T05:07:17Z,milestoned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+1,Team meeting 3,2017-01-18T05:07:17Z,milestoned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+1,Team meeting 3,2017-01-18T05:08:15Z,renamed,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+1,Team meeting 3,2017-01-18T05:41:28Z,assigned,,user2,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+1,Team meeting 3,2017-01-18T05:41:43Z,assigned,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+1,Team meeting 3,2017-01-18T05:41:52Z,assigned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+1,Team meeting 3,2017-01-19T20:01:23Z,subscribed,,user2,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+1,Team meeting 3,2017-01-19T20:01:23Z,mentioned,,user2,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+1,Team meeting 3,2017-01-19T20:01:23Z,mentioned,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+1,Team meeting 3,2017-01-19T20:01:23Z,subscribed,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+1,Team meeting 3,2017-01-20T04:40:44Z,closed,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+8,Team meeting 4,2017-01-20T04:33:34Z,milestoned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+8,Team meeting 4,2017-01-20T04:33:34Z,milestoned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+8,Team meeting 4,2017-01-22T07:08:15Z,closed,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+10,buy gorrilaa,2017-01-26T21:58:07Z,milestoned,,user5
+10,buy gorrilaa,2017-01-26T21:58:07Z,assigned,,user2
+10,buy gorrilaa,2017-01-27T22:55:39Z,closed,,user1
+2,Conduct research on problems in daily Hospital Operations,2017-01-18T05:12:26Z,milestoned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+2,Conduct research on problems in daily Hospital Operations,2017-01-18T05:12:26Z,milestoned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+2,Conduct research on problems in daily Hospital Operations,2017-01-18T05:41:28Z,assigned,,user2,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+2,Conduct research on problems in daily Hospital Operations,2017-01-18T05:41:43Z,assigned,,user3,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+2,Conduct research on problems in daily Hospital Operations,2017-01-18T05:41:52Z,assigned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+2,Conduct research on problems in daily Hospital Operations,2017-01-22T07:09:52Z,closed,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+6,Team meeting 2 ,2017-01-18T05:21:47Z,milestoned,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
+6,Team meeting 2 ,2017-01-18T05:22:02Z,closed,,user1,1,JAN Milestone,"Conduct research on problems regarding a certain topic
+
+Find volunteers for project testing/surveys
+
+Find a group of users with experience of a particular problem
+
+Conduct research on how people have tried to solve the problem (using software)
+
+Prepare a briefing that includes but not limited to 3 different proposed solutions
+",genterist,2017-01-18T05:06:54Z,2017-01-31T08:00:00Z,2017-01-31T01:48:43Z,closed
