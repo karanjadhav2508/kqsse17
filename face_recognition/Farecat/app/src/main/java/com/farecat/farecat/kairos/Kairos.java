@@ -18,8 +18,8 @@ public class Kairos {
     public static final String SUCCESS = "success";
     public static final String MESSAGE_FAILURE = "message";
 
-    public static final String APP_ID_VALUE = "76395980";
-    public static final String APP_KEY_VALUE = "fe00f9411bbadb0269b4f0757050aaf2";
+    public static final String APP_ID_VALUE = "";
+    public static final String APP_KEY_VALUE = "";
     public static final String GALLERY_VALUE = "students";
 
 }
