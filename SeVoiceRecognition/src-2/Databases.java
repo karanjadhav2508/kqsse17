@@ -30,7 +30,7 @@ public class Databases {
            String url = "jdbc:mysql://localhost:3306/speech_apps";
 
            String username = "root";
-           String password = "Alokozai?1986";
+           String password = "A000000000";
 
            // Make a connection with the database.
            try {
